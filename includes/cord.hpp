@@ -32,6 +32,7 @@ public:
   // Friend functions
   friend Cord* ConcatCords(Cord* left_cord, Cord* right_cord);
   friend void ReduceCords(cs128::ReferenceList<Cord*> cords);
+  friend Cord* Reduce(Cord* red_cord, std::map<std::string, Cord*>& nodes);
 
 private:
   Cord* left_ = nullptr;
